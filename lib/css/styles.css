@@ -1,0 +1,13 @@
+h4.header{
+	padding-top:15px;
+	padding-left:15px;
+}
+div.main.container{
+	padding: 0 15px;
+}
+.parallax-container {
+	height: 200px;
+}
+footer{
+	padding:15px;
+}
