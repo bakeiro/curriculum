@@ -11,3 +11,33 @@ div.main.container{
 footer{
 	padding:15px;
 }
+body{
+	color:#7d7d7d;
+}
+h5.center-align{
+	margin:
+}
+span.job-time{
+	font-size: 12px;
+}
+span.job-company{
+	font-size: 14px;
+}
+p.job-description{
+	padding-top:5px;
+}
+div.timeline-experience div.card-content{
+	border-left: 3px solid #2196f3;
+	border-radius: 2px;
+}
+div.section-title i.small.material-icons{
+	font-size: 3rem;
+	position: relative;
+    top: 7px;
+}
+div.section-title span.section-title{
+	font-size: 35px;
+}
+div.section-title{
+	text-align: center;
+}
