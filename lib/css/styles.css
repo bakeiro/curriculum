@@ -1,12 +1,7 @@
+/* General styles */
 h4.header{
 	padding-top:15px;
 	padding-left:15px;
-}
-div.main.container{
-	padding: 0 15px;
-}
-.parallax-container {
-	height: 200px;
 }
 footer{
 	padding:15px;
@@ -40,4 +35,58 @@ div.section-title span.section-title{
 }
 div.section-title{
 	text-align: center;
+}
+
+
+/* Main */
+div#main{
+	width: 100%;
+}
+
+/* HOME */
+img.personal-pic{
+	width: 350px;
+}
+div.home{
+	height: 260px;
+	overflow: hidden;
+}
+div.cut{
+	top: 111px;
+    z-index: 1;
+    position: absolute;
+    border-style: solid;
+    border-width: 261px 0 0 100px;
+    border-color: rgba(223, 50, 50, 0) transparent transparent #2196f3;
+    right: 333px;
+}
+
+
+/* Every card */
+div.my-section{
+	margin: 0 auto;
+}
+
+
+/* website behaviur */
+
+/* less than 900 */
+@media (max-width: 900px) {
+	div.my-section{
+		width: 640px;
+	}
+}
+
+/* Less than 670 */
+@media (max-width: 670px) {
+	div.my-section{
+		width: 90%;
+	}
+}
+
+/* more than 900 */
+@media (min-width: 900px) {
+	div.my-section{
+		width: 890px;
+	}
 }
