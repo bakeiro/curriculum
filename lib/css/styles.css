@@ -6,6 +6,11 @@ h4.header{
 footer{
 	padding:15px;
 }
+
+footer span.footer-text{
+	position: relative;
+	top: -10px;
+}
 body{
 	color:#7d7d7d;
 }
