@@ -60,6 +60,26 @@ div.cut{
     border-color: rgba(223, 50, 50, 0) transparent transparent #2196f3;
 }
 
+/* Side nav */
+div.square-name{
+	color: white;
+	height: 200px;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 80px;
+}
+
+a.button-collapse.white-text{
+	border: 2px solid #7d7d7d;
+    background-color: #7d7d7d;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
 
 /* Every card */
 div.my-section{
