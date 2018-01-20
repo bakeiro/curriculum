@@ -125,9 +125,13 @@ div.my-section{
 		height: 200px;
 		border-radius: 100px;
 		border: 4px solid white;
+		position: relative;
+		top: -370px;
 	}
 	div.home{
 		overflow: visible;
+		position: relative;
+		top: 135px;
 	}
 	div.div-personal-pic{
 		display: flex;
