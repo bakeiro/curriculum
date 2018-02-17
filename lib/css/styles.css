@@ -6,6 +6,9 @@ h4.header{
 footer{
 	padding:15px;
 }
+div#home{
+	position: relative;
+}
 
 footer span.footer-text{
 	position: relative;
@@ -13,9 +16,6 @@ footer span.footer-text{
 }
 body{
 	color:#7d7d7d;
-}
-h5.center-align{
-	margin:
 }
 span.job-time{
 	font-size: 12px;
@@ -107,9 +107,6 @@ div.my-section{
 .btn-floating i{
 	font-size: 1.3rem;
 }
-
-
-/* website behaviur */
 
 /* less than 900 */
 @media (max-width: 900px) {
