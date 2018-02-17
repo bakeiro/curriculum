@@ -1,4 +1,4 @@
-#Materialize-Portfolio
+# Materialize Portfolio
 
 A personal portfolio template designed using Materialize CSS.
 You are welcome to contribute in this repository.
