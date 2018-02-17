@@ -53,10 +53,10 @@ div#main{
 
 /* HOME */
 img.personal-pic{
-	width: 500px;
+	width: 560px;
     position: relative;
-    top: -60px;
-    left: -90px;
+    top: -100px;
+    left: -105px;
     z-index: 0;
 }
 div.div-personal-pic{
