@@ -41,7 +41,10 @@ div.section-title span.section-title{
 div.section-title{
 	text-align: center;
 }
-
+span.info{
+	position: relative;
+    top: -6px;
+}
 
 /* Main */
 div#main{
@@ -51,6 +54,13 @@ div#main{
 /* HOME */
 img.personal-pic{
 	width: 500px;
+    position: relative;
+    top: -60px;
+    left: -90px;
+    z-index: 0;
+}
+div.div-personal-pic{
+	overflow: hidden;
 }
 div.home{
 	height: 260px;
@@ -60,6 +70,7 @@ div.home{
 }
 div.cut{
 	top: 0px;
+    margin-left: -12px;
     z-index: 1;
     position: absolute;
     border-style: solid;
@@ -116,17 +127,34 @@ div.my-section{
 
 /* Less than 600 */
 @media (max-width: 600px) {
+
+	h4#name{
+		margin-top: 85px;
+	}
+	div.home{
+		height: 325px;
+	}
 	div.cut{
 		display: none;
 	}
-	img.personal-pic{
-		margin: 0 auto;
-		width: 200px;
-		height: 200px;
+	div.personal-pic-container{
 		border-radius: 100px;
 		border: 4px solid white;
 		position: relative;
-		top: -370px;
+		top: -420px;
+		overflow: hidden;
+		width: 200px;
+		height: 200px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	img.personal-pic{
+		position: relative;
+		margin: 0 auto;
+		width: 400px;
+		height: 360px;
+		top: -100px;
+		left: -110px;
 	}
 	div.home{
 		overflow: visible;
@@ -134,11 +162,12 @@ div.my-section{
 		top: 135px;
 	}
 	div.div-personal-pic{
+		overflow: inherit;
 		display: flex;
 		width: 100%;
-
 	}
 }
+
 
 /* more than 900 */
 @media (min-width: 900px) {
