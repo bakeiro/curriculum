@@ -1,2 +1,7 @@
-# curriculum
-Page made with materialize CSS and JS to describe myself, my studies, my experience and my personal proyects
+#Materialize-Portfolio
+
+A personal portfolio template designed using Materialize CSS.
+You are welcome to contribute in this repository.
+
+Demo
+https://bakeiro.github.io/materialize-portfolio/
