@@ -1,7 +1,6 @@
 # Materialize Portfolio
 
-A personal portfolio template designed using Materialize CSS.
-You are welcome to contribute in this repository.
+Personal portafolio made by me, using materialize CSS and Jquery, feel free to use it or edit it 
 
 Demo
-https://bakeiro.github.io/materialize-portfolio/
+https://bakeiro.github.io/curriculum/
