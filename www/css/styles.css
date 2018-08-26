@@ -17,6 +17,12 @@ footer span.footer-text{
 body{
 	color:#7d7d7d;
 }
+svg.linkedInIcon{
+	color: white;
+    width: 23px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
 span.job-time{
 	font-size: 12px;
 }
