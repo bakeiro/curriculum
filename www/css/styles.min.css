@@ -1,7 +1,9 @@
 h4.header{padding-top:15px;padding-left:15px;}
 footer{padding:15px;}
 div#home{position:relative;}
-i#hamburger{font-size: 28px;}
+i#hamburger{font-size:30px;}
+div#languages{padding-left: 4px;background-color: #b4b0b0;border-radius: 2px;z-index: 5;padding-top: 5px;width: 53px;position: fixed;bottom: 50px;left: 20px;}
+div#languages img{width: 45px;}
 footer span.footer-text{position:relative;top:-10px;}
 svg.linkedInIcon{color: white;width: 23px;margin-left: 8px;margin-top: 5px;}
 body{color:#7d7d7d;}
