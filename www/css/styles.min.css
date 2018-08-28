@@ -1,6 +1,7 @@
 h4.header{padding-top:15px;padding-left:15px;}
 footer{padding:15px;}
 div#home{position:relative;}
+i#hamburger{font-size: 28px;}
 footer span.footer-text{position:relative;top:-10px;}
 svg.linkedInIcon{color: white;width: 23px;margin-left: 8px;margin-top: 5px;}
 body{color:#7d7d7d;}
