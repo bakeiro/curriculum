@@ -21,49 +21,30 @@
 	<!-- Materialize -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="www/js/node_modules/materialize-css/dist/css/materialize.min.css">
-	<link rel="stylesheet" href="www/css/styles.min.css">
+	<link rel="stylesheet" href="www/css/styles.css">
 
 </head>
 
 <body class="grey lighten-4">
 
 	<!-- Sidenav -->
-	<div class="header blue" id="slider">
+	<ul id="slide-out" class="sidenav">
+		
+		<div class="square-name blue">
+			<span>D</span>
+		</div>
 
-		<ul id="slide-out" class="side-nav">
-
-			<div class="square-name blue">
-				<span>D</span>
-			</div>
-
-			<li>
-				<a class="waves-effect" href="#home"><i class="small material-icons">home</i>Inicio</a>
-			</li>
-			<li>
-				<a class="waves-effect" href="#about"><i class="small material-icons">account_circle</i>Sobre mi</a>
-			</li>
-			<li>
-				<a class="waves-effect" href="#experience"><i class="small material-icons">layers</i>Experiencia</a>
-			</li>
-			<li>
-				<a class="waves-effect" href="#skills"><i class="small material-icons">insert_chart</i>Habilidades</a>
-			</li>
-			<li>
-				<a class="waves-effect" href="#references"><i class="small material-icons">rss_feed</i>Referencias</a>
-			</li>
-			<li>
-				<a class="waves-effect" href="#education"><i class="small material-icons">import_contacts</i>Formación</a>
-			</li>
-			<li>
-				<a class="waves-effect" href="#intereses"><i class="small material-icons">mood</i>Intereses</a>
-			</li>
-		</ul>
-
-		<a href="#" data-activates="slide-out" class="button-collapse white-text">
-			<i id="hamburger" class="material-icons">menu</i>
-		</a>
-	</div>
-
+		<li><a class="waves-effect" href="#home"><i class="small material-icons">home</i>Inicio</a></li>
+		<li><a class="waves-effect" href="#about"><i class="small material-icons">account_circle</i>Sobre mi</a></li>
+		<li><a class="waves-effect" href="#experience"><i class="small material-icons">layers</i>Experiencia</a></li>
+		<li><a class="waves-effect" href="#skills"><i class="small material-icons">insert_chart</i>Habilidades</a></li>
+		<li><a class="waves-effect" href="#references"><i class="small material-icons">rss_feed</i>Referencias</a></li>
+		<li><a class="waves-effect" href="#education"><i class="small material-icons">import_contacts</i>Formación</a></li>
+		<li><a class="waves-effect" href="#intereses"><i class="small material-icons">mood</i>Intereses</a></li>
+	</ul>
+	<a href="#" id="hamburger" data-target="slide-out" class="sidenav-trigger white-text"><i class="material-icons">menu</i></a>
+	
+	<!-- Languages -->
 	<div id="languages">
 		<a href="index.html"><img src="www/img/lang_english.png" alt="English_site"></a>
 		<br>
@@ -381,26 +362,42 @@
 		</div>
 	</footer>
 
-	<script src="www/js/node_modules/jquery/dist/jquery.min.js "></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script src="www/js/node_modules/materialize-css/dist/js/materialize.min.js "></script>
 
 	<script>
-		$(document).ready(function(){
-			
-			$("body").on("click", "div#slider li a", function(){
-				var id = $(this.hash).prop("id");
-				$('html,body').animate({ scrollTop: $("div#" + id).offset().top }, 900, "swing");
-				$('.button-collapse').sideNav('hide');
-			});
-			/*
+
+		document.addEventListener('DOMContentLoaded', function() {
+
+			//Init
 			M.AutoInit();
 
-			var toastHTML = '<span>I am toast content</span><button class="btn-flat toast-action">Undo</button>';
-  			M.toast({html: toastHTML});
+			//Toast
+			var toastHTML = '<span>Realiza tus proyectos web conmigo!</span><button class="btn-flat toast-action">Formulario</button>';
+			var toast_options = {"displayLength": 200000, html: toastHTML}
+			
+			setTimeout( function(){
+				M.toast(toast_options)
+			}, 3000);
+			
+			//Sidenav
+			var elems = document.querySelectorAll('.sidenav');
+			var slider_intance = M.Sidenav.init(elems, {"edge": "left"});
+			window.slider_intance = slider_intance[0];
 
-			$(".button-collapse ").sideNav();
-			*/
 		});
+		
+		//Slider movements
+		$(document).ready(function(){
+			
+			$("body").on("click", "ul#slide-out li a", function(){
+				var id = $(this.hash).prop("id");
+				$('html,body').animate({ scrollTop: $("div#" + id).offset().top }, 900, "swing");
+				window.slider_intance.close();
+			});
+		
+		});
+
 	</script>
 </body>
 

@@ -93,8 +93,7 @@ div.square-name{
     padding-top: 25px;
     font-size: 80px;
 }
-
-a.button-collapse.white-text{
+a#hamburger{
 	z-index: 5;
 	border: 2px solid #7d7d7d;
     background-color: #7d7d7d;
@@ -104,6 +103,25 @@ a.button-collapse.white-text{
     position: fixed;
     top: 20px;
     left: 20px;
+}
+a#hamburger i{
+	font-size: 30px;
+}
+
+/* Languages */
+div#languages{
+	padding-left: 3px;
+    background-color: #b4b0b0;
+    border-radius: 2px;
+    z-index: 5;
+    padding-top: 5px;
+    width: 44px;
+    position: fixed;
+    top: 78px;
+    left: 20px;
+}
+div#languages img{
+	width: 37px;
 }
 
 /* Every card */
