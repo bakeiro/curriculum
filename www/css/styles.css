@@ -117,7 +117,7 @@ div#languages{
     padding-top: 5px;
     width: 44px;
     position: fixed;
-    top: 78px;
+    bottom: 25px;
     left: 20px;
 }
 div#languages img{
