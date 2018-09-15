@@ -1,2 +1,3 @@
 dist/*
 .cache/*
+www/js/node_modules/*
