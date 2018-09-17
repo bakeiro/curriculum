@@ -25,12 +25,19 @@ svg.linkedInIcon{
 }
 span.job-time{
 	font-size: 12px;
+    position: relative;
+    top: -3px;
 }
 span.job-company{
 	font-size: 14px;
 }
+span.job-title{
+	font-size: 18px;
+    color: #524f4f;
+}
 p.job-description{
 	padding-top:5px;
+	font-size: 14px;
 }
 div.timeline-experience div.card-content{
 	border-left: 3px solid #2196f3;
@@ -117,7 +124,7 @@ div#languages{
     padding-top: 5px;
     width: 44px;
     position: fixed;
-    bottom: 25px;
+    bottom: 75px;
     left: 20px;
 }
 div#languages img{
