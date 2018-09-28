@@ -3,6 +3,20 @@ h4.header{
 	padding-top:15px;
 	padding-left:15px;
 }
+/*hs styles*/
+span#name{
+	font-size: 2.28rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+h1.section-title,h2.section-title,h3.section-title,h4.section-title,h5.section-title,h6.section-title{
+	margin-top: 10px;
+	font-size: 35px;
+}
+div.section-title{
+	text-align: center;
+}
 footer{
 	padding:15px;
 }
@@ -53,12 +67,6 @@ div.section-title i.small.material-icons{
 	font-size: 3rem;
 	position: relative;
     top: 7px;
-}
-div.section-title span.section-title{
-	font-size: 35px;
-}
-div.section-title{
-	text-align: center;
 }
 span.info{
 	position: relative;
@@ -162,7 +170,7 @@ div.my-section{
 /* Less than 600 */
 @media (max-width: 600px) {
 
-	h4#name{
+	span#name{
 		margin-top: 85px;
 	}
 	div.home{
