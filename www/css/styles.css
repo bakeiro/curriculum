@@ -153,6 +153,13 @@ div.my-section{
 	font-size: 1.3rem;
 }
 
+/* references */
+div.card-image.reference{
+	max-width: none !important;
+    padding: 5px;
+    filter: opacity(60%);
+}
+
 /* less than 900 */
 @media (max-width: 900px) {
 	div.my-section{
