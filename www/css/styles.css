@@ -153,6 +153,12 @@ div.my-section{
 	font-size: 1.3rem;
 }
 
+/* Skills */
+span.small{
+	font-size: 12px;
+}
+
+
 /* references */
 div.card-image.reference{
 	max-width: none !important;
