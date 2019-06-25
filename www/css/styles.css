@@ -80,11 +80,18 @@ div#main{
 
 /* HOME */
 img.personal-pic{
-	width: 560px;
-    position: relative;
-    top: -100px;
-    left: -105px;
-    z-index: 0;
+  z-index: 0;
+  position: relative;
+  width: 265px;
+  left: -8px;
+  top: -70px;
+}
+img.personal-pic-2{
+  width: 560px;
+  position: relative;
+  top: -100px;
+  left: -105px;
+  z-index: 0;
 }
 div.div-personal-pic{
 	overflow: hidden;
@@ -204,12 +211,10 @@ div.card-image.reference{
 		margin-left: auto;
 	}
 	img.personal-pic{
-		position: relative;
-		margin: 0 auto;
-		width: 400px;
-		height: 360px;
-		top: -100px;
-		left: -110px;
+    position: relative;
+    top: -50px;
+    left: -2px;
+    width: 195px;
 	}
 	div.home{
 		overflow: visible;
