@@ -165,6 +165,12 @@ span.small{
 	font-size: 12px;
 }
 
+/* contact me button */
+a.btn.orange.contact-me-button {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+}
 
 /* references */
 div.card-image.reference{
