@@ -100,7 +100,8 @@ div.home{
 	height: 260px;
 	overflow: hidden;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-	border-radius: 2px;
+    border-radius: 2px;
+    background-color: #2b55a2;
 }
 div.cut{
 	top: 0px;
@@ -109,7 +110,7 @@ div.cut{
     position: absolute;
     border-style: solid;
     border-width: 260px 0 0 100px;
-    border-color: rgba(223, 50, 50, 0) transparent transparent #2196f3;
+    border-color: rgba(223, 50, 50, 0) transparent transparent #2b55a2;
 }
 
 /* Side nav */
