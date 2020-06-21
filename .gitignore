@@ -4,4 +4,4 @@ en/dist/*
 dist/*
 .cache/*
 
-www/js/node_modules/*
+node_modules/*
