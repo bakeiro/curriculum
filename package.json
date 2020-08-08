@@ -4,18 +4,12 @@
   "description": "personal website about myself",
   "main": "index.html",
   "scripts": {
-    "scss": "node-sass -o dist/css assets/scss/style.scss",
     "concat:css": "concat -o dist/css/styles.css dist/css/style.css assets/css/test.css",
     "concat:js": "mkdir -p dist/js && concat -o dist/js/scripts.js assets/js/test1.js assets/js/test2.js",
-    "concat": "npm run concat:css && npm run concat:js",
     "cssmin": "cleancss -o dist/css/styles.min.css dist/css/styles.css",
     "uglify": "uglifyjs -o dist/js/scripts.min.js dist/js/scripts.js",
     "imagemin": "imagemin --out-dir=dist/img assets/img/**/*.{png,jpg,gif}",
-    "build:css": "npm run scss && npm run concat:css && npm run cssmin",
-    "build:js": "npm run concat:js && npm run uglify",
-    "build:img": "npm run imagemin",
-    "build": "npm run build:css && npm run build:js && npm run build:img",
-    "test": "this is a test"
+    "build": "npm run concat:css && npm run cssmin && npm run concat:js && npm run uglify && npm run imagemin"
   },
   "keywords": [
     "me",
@@ -27,5 +21,9 @@
     "materialize-css": "^1.0.0"
   },
   "author": "David Baqueiro",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "grunt-cli": "^1.3.2",
+    "grunt-replace": "^1.0.1"
+  }
 }
