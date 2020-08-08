@@ -25,14 +25,11 @@ module.exports = function (grunt) {
 
   grunt.registerTask('buildSite', function(locale_lang) {
 
-    console.log(`building ${locale_lang} site...`);
-
     // build dictionary
     let dictionary_words_es = grunt.file.readJSON(`src/lang/${locale_lang}-words.json`);
     let new_config = {};
     
     for (key in dictionary_words_es) {
-      //let temp_pattern = new RegExp(key, 'g');
       let temp_pattern = `${key}`;
       new_config[temp_pattern] = dictionary_words_es[key];
     }
