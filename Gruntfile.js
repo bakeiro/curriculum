@@ -52,5 +52,5 @@ module.exports = function (grunt) {
     grunt.task.run('replace:dist');
   });
 
-  grunt.registerTask('default', ['buildSite:es']);
+  grunt.registerTask('default', ['buildSite:es', 'buildSite:en']);
 };
