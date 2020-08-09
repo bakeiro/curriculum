@@ -1,6 +1,7 @@
 module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-replace');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.initConfig({
     replace: {
@@ -19,6 +20,16 @@ module.exports = function (grunt) {
             expand: true, src: ['src/index.html'], dest: 'dist/'
           }
         ] 
+      }
+    },
+    concat: {
+      js: {
+        src: ['src/www/js/Jquery.min.js', 'src/www/js/materialize.min.js'],
+        dest: 'dist/build_script.js'
+      },
+      css: {
+        src: ['src/www/css/materialize.min.css', 'src/www/css/styles.css', 'src/www/css/font-awesome.css'],
+        dest: 'dist/build_styles.css'
       }
     }
   });
@@ -49,5 +60,5 @@ module.exports = function (grunt) {
     grunt.task.run('replace:dist');
   });
 
-  grunt.registerTask('default', ['buildSite:es', 'buildSite:en']);
+  grunt.registerTask('default', ['buildSite:es', 'buildSite:en', 'concat']);
 };
